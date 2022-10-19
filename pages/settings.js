@@ -1,5 +1,6 @@
 import Buttons from "../src/components/button";
 import { useState } from "react";
+import { resolveHref } from "next/dist/shared/lib/router/router";
 
 export default function Settings() {
 
@@ -20,6 +21,14 @@ export default function Settings() {
 
     //-------------------------------------------------------------------------------------//
 
+    //////////////////////////////////////// consts /////////////////////////////////////////
+
+    const enableTimer = true
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+
+    //-------------------------------------------------------------------------------------//
+
     /////////////////////////////////////// functions //////////////////////////////////////
 
     //this function handles the changes made by the user
@@ -32,6 +41,24 @@ export default function Settings() {
         return alert("Settings saved successfuly")
 
     }
+
+    //this function allows or not, the user to have permission to stop the timer
+    //using the settigs config's, if the stop timer is disabled, the user won't be allowed 
+    //to stop the timer
+    function stopTimer() {
+
+        if (!enableTimer) {
+
+            return false
+
+        } else {
+
+            return true
+
+        }
+
+    }
+
 
     //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -83,6 +110,10 @@ export default function Settings() {
 
                 <div>
                     <button type="submit" onClick={() => saveSettings()}>Save</button>
+                </div>
+
+                <div>
+                    <a href='/'><button>Go Back</button></a>
                 </div>
 
 
