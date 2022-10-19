@@ -8,13 +8,18 @@ export function MainNavBar() {
 
     const mainNavBarItems = [
         {
-            label: "Settings",
-            path: "/settings"
+            label: "Statistics",
+            path: "/statistics"
         },
         {
             label: "About",
             path: "/about"
+        },
+        {
+            label: "Login",
+            path: "/about"
         }
+
     ]
 
     return (

@@ -28,6 +28,7 @@ export default function Settings() {
     //it shows an alert message to confirm the action
     function saveSettings() {
 
+
         return alert("Settings saved successfuly")
 
     }
