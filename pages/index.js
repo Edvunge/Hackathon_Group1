@@ -9,11 +9,11 @@ export default function Home() {
 
       <title>Hackhaton</title>
 
-      <div>
+      <div className="">
 
         <MainNavBar />
 
-        <h1>Welcome to our Page</h1>
+        <input type="text" placeholder="Search..." />
 
       </div>
 
