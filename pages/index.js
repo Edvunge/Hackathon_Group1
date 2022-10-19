@@ -1,7 +1,8 @@
-import Buttons from "../src/components/button";
-import { MainNavBar } from "../src/components/mainNavBar";
-import { Statistics } from "../src/components/statistic";
-import { Stats } from "../src/components/stats";
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+import About from './about'
+import { MainNavBar } from '../src/components/mainNavBar'
 
 export default function Home() {
 
@@ -9,23 +10,17 @@ export default function Home() {
 
     <div>
 
-      <title>Hackhaton</title>
+      <MainNavBar />
 
-      <div>
-
-        <MainNavBar />
-
-        <h1>Welcome to our Page</h1>
-
+      <div className={styles.container}>
+        < About />
       </div>
 
       <div>
-
-        <Buttons />
-      
+        <input type="text" placeholder="Search..." />
       </div>
 
     </div>
 
   )
-}
+}   

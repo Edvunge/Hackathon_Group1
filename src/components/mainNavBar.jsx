@@ -27,7 +27,7 @@ export function MainNavBar() {
                     <p>logo</p>
                 </div>
 
-                <div className={styles.textos}>
+                <div className={styles.text}>
                     {
                         mainNavBarItems.map(n => <NavRoutes key={n.label} {...n} />)
                     }

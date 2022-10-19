@@ -1,9 +1,10 @@
 .nav {
 
     display: flex;
+
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: #d50000;
     padding: 10px 50px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
@@ -27,8 +28,8 @@
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 525;
-    color: black;
-    gap: 30px;
+    color: white;
+    gap: 20px;
     padding: 0 20px;
     position: relative;
 }
