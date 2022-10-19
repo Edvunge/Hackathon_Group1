@@ -1,5 +1,4 @@
 import Buttons from "../src/components/button";
-import { MainNavBar } from "../src/components/mainNavBar";
 import { Statistics } from "../src/components/statistic";
 import { Stats } from "../src/components/stats";
 
@@ -13,8 +12,6 @@ export default function Home() {
 
       <div>
 
-        <MainNavBar />
-
         <h1>Welcome to our Page</h1>
 
       </div>
@@ -22,10 +19,11 @@ export default function Home() {
       <div>
 
         <Buttons />
-      
+      <Statistics />
       </div>
 
     </div>
 
   )
 }
+
