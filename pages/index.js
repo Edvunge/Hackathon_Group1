@@ -1,11 +1,26 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Button } from "bootstrap";
 
 export default function Home() {
+
   return (
-    <div className={styles.container}>
-      
-    </div >
+
+    <div>
+
+      <title>Hackhaton</title>
+
+      <div>
+
+        <h1>Welcome to our Page</h1>
+
+      </div>
+
+      <div>
+
+
+
+      </div>
+
+    </div>
+
   )
 }
