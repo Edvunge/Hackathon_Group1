@@ -1,5 +1,7 @@
-import Buttons from "../src/components/button";
-import { MainNavBar } from "../src/components/mainNavBar";
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+import About from './about'
 
 export default function Home() {
 
@@ -7,20 +9,12 @@ export default function Home() {
 
     <div>
 
-      <title>Hackhaton</title>
-
-      <div className="">
-
-        <MainNavBar />
-
-        <input type="text" placeholder="Search..." />
-
+      <div className={styles.container}>
+        < About />
       </div>
 
       <div>
-
-        <Buttons />
-
+        <input type="text" placeholder="Search..." />
       </div>
 
     </div>
