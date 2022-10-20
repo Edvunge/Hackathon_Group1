@@ -3,8 +3,10 @@
 //DTO
 //req: {userName: string, email: string, password: string, acceptsTerms: boolean}
 //res: status(201) { req + userID }
+
+import { addUser } from "../../../src/data/login/users"
 import { validateFields } from "../../../src/services/validations"
-import { addUser } from "../../../src/data/SignUpLogin/users"
+
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
