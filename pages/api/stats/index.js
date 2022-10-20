@@ -9,21 +9,24 @@ import {
 import {
   changeStatById,
   createStats,
+  deleteStats,
   findAllStatsBetweenDates,
   findStatsById,
 } from "../../../src/services/statistics";
 
 export default async function handler(req, res) {
   if (req.method === "GET") {
-    const session = await getSessionByToken(req.headers["authorization"]);
+/*     if(!req.headers['authorization']) {
+      res.status(401).send({});
+    }
+    const session = await getSessionByToken(req.headers["authorization"]); */
 
-    console.log(req.query);
     let result = {};
     const initialDate = req.query.value.split(",")[0].trim();
     const finalDate = req.query.value.split(",")[1].trim();
 
     const stats = await findAllStatsBetweenDates(
-      session.userId,
+      //session.userId,
       initialDate,
       finalDate
     );
@@ -52,10 +55,18 @@ export default async function handler(req, res) {
     res.status(404);
   }
   if (req.method === "POST") {
-    const session = await getSessionByToken(req.headers["authorization"]);
+    //const session = await getSessionByToken(req.headers["authorization"]);
     const date = new Date();
-    const stat = await createStats(req.body, session.userId, date);
+    const stat = await createStats(req.body, /* session.userId, */ date);
     res.status(201).json(stat);
+  } else {
+    res.status(404);
+  }
+
+  if (req.method === "DELETE") {
+    //const session = await getSessionByToken(req.headers["authorization"]);
+    const stat = await deleteStats({});
+    res.status(201).json({});
   } else {
     res.status(404);
   }

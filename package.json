@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "populate": "node tasks/populate.js",
     "dev": "next dev -p 34010",
     "build": "next build",
     "start": "next start -p 34010",

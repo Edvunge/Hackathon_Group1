@@ -12,10 +12,10 @@ async function getAllStats(userId) {
     return await collection.find({ userID: userId }).toArray()
 }
 
-async function getAllStatsBetweenDates(userId, startDate, endDate) {
+async function getAllStatsBetweenDates(/* userId, */ startDate, endDate) {
     // console.log(userId)
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
-    return await collection.find({ userID: userId, date: {
+    return await collection.find({ /* userID: userId, */ date: {
         $gte: new Date(startDate),
         $lte: new Date(endDate)
     }, }).toArray()
@@ -61,9 +61,16 @@ async function getStatsByMonth(id) {
 
 
 
-async function insertStats(stats, userID, date) {
+async function insertStats(stats, /* userID, */ date) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
-    const newStat = await collection.insertOne({ ...stats, userID, date })
+    const newStat = await collection.insertOne({ ...stats, /* userID, */ date })
+    return getStatsById(newStat.insertedId)
+
+}
+
+async function deleteAllStats({}) {
+    const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
+    const newStat = await collection.deleteMany({})
     return getStatsById(newStat.insertedId)
 
 }
@@ -80,5 +87,6 @@ export {
     getStatsById,
     insertStats,
     updateStatsById,
-    getAllStatsBetweenDates
+    getAllStatsBetweenDates,
+    deleteAllStats
 }
