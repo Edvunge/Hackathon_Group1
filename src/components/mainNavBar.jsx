@@ -29,7 +29,7 @@ export function MainNavBar() {
             <nav className={styles.nav}>
 
                 <div className={styles.logo}>
-                    <p>logo</p>
+                    <img src="logo.png"></img>
                 </div>
 
                 <div className={styles.text}>

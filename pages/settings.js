@@ -17,13 +17,8 @@ export default function Settings() {
     //useState to change the settings
     const [settings, setSettings] = useState("")
 
-    //////////////////////////////////////////////////////////////////////////////////////////
-
-    //-------------------------------------------------------------------------------------//
-
-    //////////////////////////////////////// consts /////////////////////////////////////////
-
-    const enableTimer = true
+    //useState to allow to stop the timer
+    const [stopTimer, setstopTimer] = useState("")
 
     //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -45,19 +40,19 @@ export default function Settings() {
     //this function allows or not, the user to have permission to stop the timer
     //using the settigs config's, if the stop timer is disabled, the user won't be allowed 
     //to stop the timer
-    function stopTimer() {
+    // function stopTimer() {
 
-        if (!enableTimer) {
+    //     if (timer !== 0) {
 
-            return false
+    //         return false
 
-        } else {
+    //     } else {
 
-            return true
+    //         return true
 
-        }
+    //     }
 
-    }
+    // }
 
 
     //////////////////////////////////////////////////////////////////////////////////////////

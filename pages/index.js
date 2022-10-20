@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/index.module.css'
 import About from './about'
 import { MainNavBar } from '../src/components/mainNavBar'
 import Settings from './settings'
@@ -15,25 +15,32 @@ export default function Home() {
 
   return (
 
-    <div>
+    <div className={styles.background}>
 
       <MainNavBar />
 
-      <div className={styles.container}>
+      <div className={styles.divButtons}>
+
+        <div>
+          <input className={styles.searchBar} type="text" placeholder="Search..." ></input>
+
+        </div>
+
+        <div className={styles.divStartAndSettings}>
+
+          <div>
+            <button className={styles.actionButtons}>Start</button >
+          </div>
+
+          <div>
+            <button className={styles.actionButtons} href='/settings'>Settings</button>
+          </div>
+
+        </div>
 
       </div>
 
-      <div>
-        <input type="text" placeholder="Search..." />
-      </div>
 
-      <div>
-        <button>Start</button >
-      </div>
-
-      <div>
-        <a href='/settings'><button>Settings</button></a>
-      </div>
 
     </div>
 
