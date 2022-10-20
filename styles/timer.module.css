@@ -30,6 +30,22 @@
 
 }
 
+.numButtons {
+
+    width: 50vw;
+
+}
+
+.timer {
+
+    padding: 15 0px;
+    font-size: 100px;
+    align-items: center;
+    color: white;
+
+
+}
+
 
 .actionButtons {
     padding: 2em 3em;

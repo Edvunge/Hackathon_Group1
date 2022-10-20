@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/timer.module.css'
 import { format } from 'date-fns'
+import { useRouter } from 'next/router'
 
 export default function Home() {
 
@@ -39,27 +40,36 @@ export default function Home() {
         }
     }, [customTime])
 
- 
+    const router = useRouter();
+
+
     return (
-        <div className={styles.container}>
+
+        <div className={styles.background}>
             <Head>
-                <title>Pomodoro:{timeLeft}</title>
+                <title className={styles.timer}>Pomodoro:{timeLeft}</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
             <div>
-                <h1>BANADORA</h1>
-                <button onClick={() => setBaseTime(periodTime)}>25</button>
-                <button onClick={() => setBaseTime(longPause)}>10</button>
-                <button onClick={() => setBaseTime(shortPause)}>5</button>
-                <input type="number" min="0" max="60"
-                    onChange={e => setCustomTime(e.target.value)}
-                    value={customTime} />
-                <hr />
-                <span>{timeLeft}</span>
-                <hr />
-                <button onClick={() => setIsActive(true)}>Start</button>
-                <button onClick={() => setIsActive(false)}>Stop</button>
-                
+                <div className={styles.divButtons}>
+
+                    <h1>BANADORA</h1>
+
+
+                    <div className={styles.timer}>
+                        <span className={styles.timer}>{timeLeft}</span>
+                    </div>
+
+                    <button className={styles.actionButtons} onClick={() => setIsActive(true)}>Start</button>
+                    <button className={styles.actionButtons} onClick={() => setIsActive(false)}>Stop</button>
+
+                    <button
+                        className={styles.actionButtons}
+                        onClick={() => router.push("/")}>Go Back</button>
+
+                </div>
+
             </div>
 
         </div>
