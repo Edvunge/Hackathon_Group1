@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-
 import Chart from 'chart.js/auto';
 
 
@@ -23,12 +22,12 @@ function DailyGraph() {
         .then((res) => res.json())
         .then((result) => {
           setData(result);
-          console.error(data);
+          console.log(result)
         })
         .catch((err) => console.log("error"))
     };
     fetchData();
-  });
+  }, []);
 
 
   const datas = {
@@ -60,7 +59,7 @@ function DailyGraph() {
   return (
     <div>
       <h2>Daily Graph</h2>
-      <div style={{ width: 700 }}>
+      <div style={{ width: "80vw" }}>
         <Bar
           data={datas}
           style={{
