@@ -24,346 +24,346 @@ function randomIntFromInterval(min, max) {
 const aquiloQueQueremosMeter = [
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
     {
         timeSpent: randomIntFromInterval(0, 300),
-        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+        date: new Date(`2022-${randomIntFromInterval(01, 10).toString().padStart(2, '0')}-${randomIntFromInterval(01, 28).toString().padStart(2, '0')}T09:42:45.246Z`)
     },
 ]
 console.log(aquiloQueQueremosMeter)
 
 async function populateStats(stats, /* userID, */ date) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
-    const newStat = await collection.insertOne({ ...stats, /* userID, date */  })
+    const newStat = await collection.insertOne({ ...stats, /* userID, date */ })
     return newStat.insertedId
 
 }

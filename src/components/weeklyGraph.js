@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
-import style from "../styles/index.module.css"
 
 
 function DailyGraph() {
@@ -12,10 +11,12 @@ function DailyGraph() {
   useEffect(() => {
 
     const fetchData = () => {
-      fetch(`/api/stats?type=daily&value=2022-10-14,2022-10-20`, {
+      fetch(`/api/stats?type=weekly&value=2022-01-00,2022-10-31`, {
         method: "GET"
       })
-  
+        /* headers:{
+          Authorization: localStorage.getItem("token"),
+        } */
         .then((res) => res.json())
         .then((result) => {
           setData(result);
@@ -34,7 +35,7 @@ function DailyGraph() {
   const stats = {
     labels: Object.keys(data),
     datasets: [{
-      label: 'Time spent (hours)',
+      label: 'Time spent (minutes)',
       data: Object.keys(data).map(k => data[k]),
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
