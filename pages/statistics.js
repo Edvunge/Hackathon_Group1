@@ -1,25 +1,22 @@
 import Buttons from "../src/components/button";
 import { Statistics } from "../src/components/statistic";
 import { Stats } from "../src/components/stats";
+import Graphs from "./graphs";
 
 export default function Home() {
 
   return (
 
     <div>
-
-      <title>Hackhaton</title>
-
+      <Statistics />
+      <title>Graphs and Statistics</title>
       <div>
-
-        <h1>Welcome to our Page</h1>
-
+        <h1>Welcome to graphs Page </h1>
       </div>
 
       <div>
-
-        <Buttons />
-      <Statistics />
+      <Buttons />
+      <Graphs />
       </div>
 
     </div>
