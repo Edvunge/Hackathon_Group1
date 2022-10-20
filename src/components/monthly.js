@@ -3,7 +3,7 @@ import { Bar } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 
 
-function DailyGraph() {
+function MonthlyGraph() {
 
   const [data, setData] = useState({
   })
@@ -11,7 +11,7 @@ function DailyGraph() {
   useEffect(() => {
 
     const fetchData = () => {
-      fetch(`/api/stats?type=weekly&value=2022-01-00,2022-10-31`, {
+      fetch(`/api/stats?type=monthly&value=2022-01-00,2022-10-31`, {
         method: "GET"
       })
         /* headers:{
@@ -60,7 +60,7 @@ function DailyGraph() {
 
   return (
     <div>
-      <h2>Daily Graph</h2>
+      <h2>Monthly Graph</h2>
       <div style={{ width: "80vw" }}>
         <Bar
           data={stats}
@@ -77,4 +77,4 @@ function DailyGraph() {
   );
 }
 ;
-export default DailyGraph
+export default MonthlyGraph

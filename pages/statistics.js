@@ -1,4 +1,5 @@
 import Buttons from "../src/components/button";
+import MonthlyGraph from "../src/components/monthly";
 import { Statistics } from "../src/components/statistic";
 import { Stats } from "../src/components/stats";
 import Graphs from "./graphs";
@@ -15,8 +16,8 @@ export default function Home() {
       </div>
 
       <div>
-      <Buttons />
-      <Graphs />
+      {/* <Buttons /> */}
+      <MonthlyGraph />
       </div>
 
     </div>
