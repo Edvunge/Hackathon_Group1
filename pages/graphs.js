@@ -14,7 +14,7 @@ function DailyGraph() {
   useEffect(() => {
 
     const fetchData = () => {
-      fetch(`/api/stats?type=daily&value=2020-10-01,2020-10-31`, {
+      fetch(`/api/stats?type=daily&value=2022-01-01,2022-10-31`, {
         method: "GET"
       })
         /* headers:{
