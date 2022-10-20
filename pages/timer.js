@@ -31,10 +31,6 @@ export default function Home() {
         }
     }, [timer, isActive]);
 
-    /*useEffect(() => {
-        resetTime()
-    }, [baseTime])*/
-
     useEffect(() => {
         if (customTime > 0) {
             let seconds = customTime * 60
@@ -43,12 +39,7 @@ export default function Home() {
         }
     }, [customTime])
 
-    /*function resetTime() {
-        setIsActive(false);
-        setTimer(baseTime);
-        setTimeLeft(format(baseTime * 1000, 'mm:ss'));
-    }*/
-
+ 
     return (
         <div className={styles.container}>
             <Head>
@@ -56,7 +47,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <h1>Hello Next</h1>
+                <h1>BANADORA</h1>
                 <button onClick={() => setBaseTime(periodTime)}>25</button>
                 <button onClick={() => setBaseTime(longPause)}>10</button>
                 <button onClick={() => setBaseTime(shortPause)}>5</button>
