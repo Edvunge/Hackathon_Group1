@@ -4,8 +4,10 @@
 //req: {email: string, password: string}
 //res: status(200), {id: ObjectID}
 
-import { checkMatchPassword, getUserByEmail } from "../../../src/data/SignUpLogin/users"
-import { addSessionUser } from "../../../src/data/SignUpLogin/userSessions"
+import { checkMatchPassword, getUserByEmail } from "../../../src/data/login/users"
+import { addSessionUser } from "../../../src/data/login/userSessions"
+
+
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {

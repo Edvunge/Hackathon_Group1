@@ -1,5 +1,7 @@
-import { checkIfUserEmailExists } from "../data/SignUpLogin/users"
-import { checkPasswordStrength, validateEmail } from "./common"
+import { checkIfUserEmailExists } from "../data/login/users"
+import { validateEmail } from "./common"
+
+
 
 async function validateFields({
     email,
