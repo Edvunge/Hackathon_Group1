@@ -7,10 +7,14 @@ import Settings from './settings'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
+/* Icons */
+
+import { AiOutlineSearch } from "react-icons/ai"
+
 
 export default function Home() {
 
-  // const navigate = useNavigate();
+  const router = useRouter();
 
 
   return (
@@ -22,7 +26,8 @@ export default function Home() {
       <div className={styles.divButtons}>
 
         <div>
-          <input className={styles.searchBar} type="text" placeholder="Search..." ></input>
+          {/* <AiOutlineSearch /> */}
+          <input className={styles.searchBar} type="text" placeholder="🔎 Search..." ></input>
 
         </div>
 
@@ -33,7 +38,9 @@ export default function Home() {
           </div>
 
           <div>
-            <button className={styles.actionButtons} href='/settings'>Settings</button>
+            <button
+              className={styles.actionButtons}
+              onClick={() => router.push("/settings")}>Settings</button>
           </div>
 
         </div>
@@ -42,7 +49,7 @@ export default function Home() {
 
 
 
-    </div>
+    </div >
 
   )
 }   

@@ -1,4 +1,4 @@
-import { getAllStats, getAllStatsBetweenDates, getStatsById, insertStats, updateStatsById } from "../data/userStats/stats"
+import { deleteAllStats, getAllStats, getAllStatsBetweenDates, getStatsById, insertStats, updateStatsById } from "../data/userStats/stats"
 
 
 async function findAllStats(userId) {
@@ -40,8 +40,13 @@ async function filterStatsByMonth(id) {
 
 
 
-async function createStats(stats, userId, date) {
-    const createdStat = await insertStats(stats, userId, date)
+async function createStats(stats, /* userId, */ date) {
+    const createdStat = await insertStats(stats, /* userId, */ date)
+    return createdStat
+}
+
+async function deleteStats({}) {
+    const createdStat = await deleteAllStats({})
     return createdStat
 }
 
@@ -58,5 +63,6 @@ export {
     filterStatsByDay,
     filterStatsByWeek,
     filterStatsByMonth,
-    findAllStatsBetweenDates
+    findAllStatsBetweenDates,
+    deleteStats
 }

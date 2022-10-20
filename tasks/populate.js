@@ -17,14 +17,353 @@ async function getMongoCollection(dbName, collectionName) {
     return client.db(dbName).collection(collectionName)
 }
 
-const aquioQueQueremosMeter = [
-    { a: 3 },
-    { a: 3 },
-]
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
 
-async function insertStats(stats, userID, date) {
+const aquiloQueQueremosMeter = [
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+    {
+        timeSpent: randomIntFromInterval(0, 300),
+        date: `2022-${randomIntFromInterval(01, 10)}-${randomIntFromInterval(01, 28)}T09:42:45.246Z`
+    },
+]
+console.log(aquiloQueQueremosMeter)
+
+async function populateStats(stats, /* userID, */ date) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
-    const newStat = await collection.insertOne({ ...stats, userID, date })
+    const newStat = await collection.insertOne({ ...stats, /* userID, date */  })
     return newStat.insertedId
 
 }
@@ -33,8 +372,8 @@ async function insertStats(stats, userID, date) {
 //     { id: 3 },
 // ]
 
-aquioQueQueremosMeter.forEach(async item => {
-    await insertStats(item, 3, "2022-2023")
+aquiloQueQueremosMeter.forEach(async item => {
+    await populateStats(item)
 })
 
-console.log("DONE")
+console.log(new Date())

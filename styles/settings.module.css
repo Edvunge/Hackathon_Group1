@@ -13,6 +13,16 @@
     align-items: center;
     gap: 20px;
     padding: 15px;
+}
+
+.divButtonsFill {
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    padding: 15px;
+    color: white;
 
 }
 
@@ -30,9 +40,8 @@
 
 }
 
-
 .actionButtons {
-    padding: 2em 3em;
+    padding: 1em 3em;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -65,11 +74,17 @@
 
 }
 
-.divStartAndSettings {
+.divSaveAndBAck {
 
     display: flex;
     flex-direction: column;
     padding: 250px;
     gap: 25px;
+
+}
+
+.everyButtonCenterPadding {
+
+    padding: 100px;
 
 }
