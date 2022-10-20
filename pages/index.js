@@ -34,7 +34,8 @@ export default function Home() {
         <div className={styles.divStartAndSettings}>
 
           <div>
-            <button className={styles.actionButtons}>Start</button >
+            <button className={styles.actionButtons}
+              onClick={() => router.push("/timer")}>Start</button>
           </div>
 
           <div>

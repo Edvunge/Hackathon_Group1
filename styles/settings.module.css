@@ -54,7 +54,7 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    width: 20vw;
+    width: 70vw;
 }
 
 .actionButtons:hover {
