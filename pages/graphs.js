@@ -16,9 +16,7 @@ function DailyGraph() {
       fetch(`/api/stats?type=daily&value=2020-10-01,2020-10-31`, {
         method: "GET"
       })
-        /* headers:{
-          Authorization: localStorage.getItem("token"),
-        } */
+  
         .then((res) => res.json())
         .then((result) => {
           setData(result);
