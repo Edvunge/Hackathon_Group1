@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "leagueSpartan";
+    src: url("../src/assets/LeagueSpartan-Bold.otf");
+}
+
+body {
+    font-family: "leagueSpartan";
+    margin: 0;
+    padding: 0;
+}
