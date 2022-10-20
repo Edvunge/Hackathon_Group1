@@ -31,9 +31,9 @@ export default function Home() {
         }
     }, [timer, isActive]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         resetTime()
-    }, [baseTime])
+    }, [baseTime])*/
 
     useEffect(() => {
         if (customTime > 0) {
@@ -43,11 +43,11 @@ export default function Home() {
         }
     }, [customTime])
 
-    function resetTime() {
+    /*function resetTime() {
         setIsActive(false);
         setTimer(baseTime);
         setTimeLeft(format(baseTime * 1000, 'mm:ss'));
-    }
+    }*/
 
     return (
         <div className={styles.container}>
@@ -68,7 +68,7 @@ export default function Home() {
                 <hr />
                 <button onClick={() => setIsActive(true)}>Start</button>
                 <button onClick={() => setIsActive(false)}>Stop</button>
-                <button onClick={() => resetTime()}>Reset</button>
+                
             </div>
 
         </div>
