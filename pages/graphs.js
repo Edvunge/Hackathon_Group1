@@ -39,7 +39,7 @@ export default () => ({
           width={400}
           height={200}
           options={{
-            maintainAspectRatio: false
+            maintainAspectRatio: true
           }}
         />
       </div>
