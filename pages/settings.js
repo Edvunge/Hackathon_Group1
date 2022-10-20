@@ -1,8 +1,12 @@
 import Buttons from "../src/components/button";
 import { useState } from "react";
 import { resolveHref } from "next/dist/shared/lib/router/router";
+import styles from '../styles/settings.module.css'
+import { useRouter } from "next/router";
 
 export default function Settings() {
+
+    const router = useRouter();
 
     /////////////////////////////////////// use state ///////////////////////////////////////
 
@@ -62,7 +66,7 @@ export default function Settings() {
 
     return (
 
-        <div>
+        <div className={styles.background}>
 
             <title>Settings Page</title>
 
@@ -85,34 +89,46 @@ export default function Settings() {
                     in case that you don't think that's necessary, make it your way :)
                 */}
 
-                <div>
-                    <label>Working Timer: </label>
-                    <input placeholder="25 min"></input>
-                </div>
+                <div className={styles.everyButtonCenterPadding}>
 
-                <div>
-                    <label>Break Timer: </label>
-                    <input placeholder="5 min"></input>
-                </div>
+                    <div className={styles.divButtonsFill}>
+                        <div>
+                            <label>Working Timer: </label>
+                            <input placeholder="25 min"></input>
+                        </div>
 
-
-                <div>
-                    <label> Enable Stop: </label>
-                    <input type="checkbox"></input>
-                    {/* styles for the button */}
-                    <span className="styles.Zabya"></span>
-                </div>
-
-                <div>
-                    <button type="submit" onClick={() => saveSettings()}>Save</button>
-                </div>
-
-                <div>
-                    <a href='/'><button>Go Back</button></a>
-                </div>
+                        <div>
+                            <label>Break Timer: </label>
+                            <input placeholder="5 min"></input>
+                        </div>
 
 
-                {/* .switch {
+                        <div>
+                            <label> Enable Stop: </label>
+                            <input type="checkbox"></input>
+                            {/* styles for the button */}
+                            <span className="styles.Zabya"></span>
+                        </div>
+                    </div>
+                    <div className={styles.divButtons}>
+
+                        <div className={styles.divSaveAndBAck}>
+
+                            <div>
+                                <button className={styles.actionButtons} type="submit" onClick={() => saveSettings()}>Save</button>
+                            </div>
+
+                            <div>
+                                <button
+                                    className={styles.actionButtons}
+                                    onClick={() => router.push("/")}>Go Back</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    {/* .switch {
                         position: relative;
                     display: inline-block;
                     width: 60px;
@@ -171,6 +187,8 @@ export default function Settings() {
                      .slider.round:before {
                          border - radius: 50%;
  }  */}
+                </div>
+
             </div>
 
         </div >
