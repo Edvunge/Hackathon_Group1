@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Bar} from 'react-chartjs-2';
+
 import Chart from 'chart.js/auto';
 
 
-const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+function DailyGraph() {
+
+  const graph = "api/stats";
+
+    const [data, setData] = useState({
+    })
+
+  useEffect(() => {
+
+      const fetchData = () => {
+        fetch(graph, {
+          method: "GET",
+          query: {type: 'daily'}
+          /* headers: {
+            Authorization: localStorage.getItem("token"),
+          } */
+          .then((res) => res.json())
+          .then((result) => {
+            setData(result);
+            console.error(data);
+          })
+          .catch((err) => console.log("error"))
+        });
+      fetchData();
+    }
+  }, );
+
+
+const datas = {
+  labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
   datasets: [{
-    label: '# of Votes',
+    label: 'Time spent (hours)',
     data: [12, 19, 3, 5, 2, 3],
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
@@ -28,21 +57,22 @@ const data = {
   }]
 }
 
-export default () => ({
-  displayName: 'BarExample',
-  render() {
+
     return (
       <div>
-        <h2>Bar Example (custom size)</h2>
+        <h2>Daily Graph</h2>
+        <div style={{ width:700}}>
         <Bar
           data={data}
-          width={400}
-          height={200}
+          style={{ width:100,
+          height: 50}}
           options={{
-            maintainAspectRatio: false
+            maintainAspectRatio: true
           }}
         />
+        </div>
       </div>
     );
   }
-});
+;
+export default DailyGraph

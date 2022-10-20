@@ -15,15 +15,17 @@ import {
 
 export default async function handler(req, res) {
   if (req.method === "GET") {
-    const session = await getSessionByToken(req.headers["authorization"]);
+/*     if(!req.headers['authorization']) {
+      res.status(401).send({});
+    }
+    const session = await getSessionByToken(req.headers["authorization"]); */
 
-    console.log(req.query);
     let result = {};
     const initialDate = req.query.value.split(",")[0].trim();
     const finalDate = req.query.value.split(",")[1].trim();
 
     const stats = await findAllStatsBetweenDates(
-      session.userId,
+      //session.userId,
       initialDate,
       finalDate
     );

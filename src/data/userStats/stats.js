@@ -12,10 +12,10 @@ async function getAllStats(userId) {
     return await collection.find({ userID: userId }).toArray()
 }
 
-async function getAllStatsBetweenDates(userId, startDate, endDate) {
+async function getAllStatsBetweenDates(/* userId, */ startDate, endDate) {
     // console.log(userId)
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
-    return await collection.find({ userID: userId, date: {
+    return await collection.find({ /* userID: userId, */ date: {
         $gte: new Date(startDate),
         $lte: new Date(endDate)
     }, }).toArray()

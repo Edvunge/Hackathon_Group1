@@ -6,8 +6,8 @@ async function findAllStats(userId) {
     return stats
 }
 
-async function findAllStatsBetweenDates(userId, startDate, endDate) {
-    const stats = await getAllStatsBetweenDates(userId, startDate, endDate)
+async function findAllStatsBetweenDates(/* userId, */ startDate, endDate) {
+    const stats = await getAllStatsBetweenDates(/* userId, */ startDate, endDate)
     return stats
 }
 
