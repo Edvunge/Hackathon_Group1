@@ -35,7 +35,7 @@ function DailyGraph() {
   const stats = {
     labels: Object.keys(data),
     datasets: [{
-      label: 'Time spent (hours)',
+      label: 'Time spent (minutes)',
       data: Object.keys(data).map(k => data[k]),
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',

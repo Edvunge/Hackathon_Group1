@@ -16,10 +16,10 @@ import {
 
 export default async function handler(req, res) {
   if (req.method === "GET") {
-/*     if(!req.headers['authorization']) {
-      res.status(401).send({});
-    }
-    const session = await getSessionByToken(req.headers["authorization"]); */
+    /*     if(!req.headers['authorization']) {
+          res.status(401).send({});
+        }
+        const session = await getSessionByToken(req.headers["authorization"]); */
 
     let result = {};
     const initialDate = req.query.value.split(",")[0].trim();
@@ -30,6 +30,18 @@ export default async function handler(req, res) {
       initialDate,
       finalDate
     );
+
+    if (req.query.type === "daily") {
+      result = {
+        "Sunday": 0,
+        "Monday": 0,
+        "Tuesday": 0,
+        "Wednesday": 0,
+        "Thursday": 0,
+        "Friday": 0,
+        "Saturday": 0,
+      }
+    }
     stats.forEach((stat) => {
       let interval = undefined;
 
@@ -50,7 +62,7 @@ export default async function handler(req, res) {
       }
     });
 
-    res.status(200).json(result); 
+    res.status(200).json(result);
   } else {
     res.status(404);
   }
@@ -72,7 +84,7 @@ export default async function handler(req, res) {
   }
 
   if (req.method === "PATCH") {
-    if(!req.headers['authorization']) {
+    if (!req.headers['authorization']) {
       res.status(401).send({});
     }
     const session = await getSessionByToken(req.headers["authorization"]);
