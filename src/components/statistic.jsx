@@ -8,16 +8,12 @@ export function Statistics() {
 
     const statistics = [
         {
-            label: "Today",
-            path: "/today"
+            label: "Daily",
+            path: "/daily"
         },
         {
-            label: "Week",
-            path: "/week"
-        },
-        {
-            label: "Month",
-            path: "/month"
+            label: "Monthly",
+            path: "/monthly"
         }
     ]
 
@@ -30,7 +26,7 @@ export function Statistics() {
 
                 <div className={styles.textos}>
                     {
-                        statistics.map(n => <NavRoutes key={n.label} {...n} />)
+                        statistics.map(n => <div><NavRoutes key={n.label} {...n} /></div>)
                     }
                 </div>
 
