@@ -58,8 +58,8 @@
 }
 
 .actionButtons:hover {
-    background-color: #23c483;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    background-color: #70cc9e;
+    box-shadow: 0px 15px 20px rgba(7, 101, 64, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
